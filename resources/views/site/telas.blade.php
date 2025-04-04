@@ -11,6 +11,7 @@
         <nav>
             <a href="{{route ('principal')}}">Sobre</a>
             <a href="{{route ('screen')}}">Telas</a>
+            <a href="{{route ('vagas')}}">candidato</a>
             <a href="">Info</a>
         </nav>
     </header>
@@ -29,6 +30,13 @@
 
     <script src="{{asset('/js/int.js')}}"></script>
 </div>
+
+    <div id="logo-container">
+                <img src="images/logo.png" id="app-logo">
+            </div>
+            <div class="tempo">
+
+    </div>
     <script src="{{asset('/js/app.js')}}"></script>
 </body>
 </html>
