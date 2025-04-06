@@ -128,6 +128,94 @@ header a {
 .thumbnail .item .conteudo .titulo {
     font-weight: bold;
 }
+/*sla*/
+/* Estilos para o container de vagas */
+.vagas-container {
+    margin-top: 40px;
+    width: 100%;
+    max-width: 1140px;
+}
+
+.vaga-linha {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    gap: 20px;
+}
+
+.vaga-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vaga-conteudo {
+    flex: 1; /* Ocupa todo o espaço disponível exceto o da seta */
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* Espaço entre título e descrição */
+}
+
+.vaga-seta {
+    margin-left: 20px; /* Espaço entre o conteúdo e a seta */
+    color: #fff; /* Cor da seta */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vaga-item {
+    cursor: pointer;
+}
+
+.vaga-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.vaga-item h3 {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.vaga-item p {
+    color: #ddd;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/* Responsividade para as vagas */
+@media screen and (max-width: 768px) {
+    .vaga-linha {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .vaga-item {
+        width: 100%;
+    }
+    
+    .vagas-container {
+        padding: 0 20px;
+    }
+}
+
+/* Ajuste para o conteúdo principal quando as vagas são adicionadas */
+.carrossel .lista .item .conteudo {
+    top: 10%;
+    padding-right: 0;
+    width: 1140px;
+    max-width: 90%;
+    transform: translateX(-50%);
+}
+
+
+
 
 /* Animações */
 @keyframes showContent {
