@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+
+html, body {
+    font-family: Poppins;
+    background-color: rgb(0, 0, 0);
+    color: #eee;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; 
+}
+
+header {
+    width: 100%; 
+    height: 50px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    position: absolute; 
+    top: 0; 
+    z-index: 100;
+}
+
+header a {
+    text-decoration: none;
+    color: #ffffff;
+    margin-right: 35px;
+    margin-left: 22px;
+}
+
+#logo-container {
+    position: absolute;
+    z-index: 200;
+    top: -13px;
+}
+
+#app-logo{
+    width: 80px;
+    height: auto;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0; /* Altere para 'right: 0;' se quiser a sidebar no lado direito */
+    width: 250px;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffffff; /* Cor do texto */
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Sombra para destacar a sidebar */
+    z-index: 150; /* Certifique-se de que a sidebar fique acima de outros elementos */
+}
+
+.sidebar h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-family: Poppins;
+    color: #ffffff;
+    margin-top: 40px;
+    margin-left: 43px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: Poppins, sans-serif;
+    transition: color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    color: #00bcd4; /* Cor ao passar o mouse */
+}
+
+.background-image {
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+    object-fit: cover; 
+    /*z-index: 1;*/ 
+}
+
+
+.thumbnail {
+    position: absolute;
+    top: 50%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-39%, -50%); /* Garante que o ponto central da thumbnail permaneça no centro */
+    width: max-content;
+    display: flex;
+    gap: 20px;
+}
+
+.thumbnail .item {
+    width: 650px; /* Aumente a largura */
+    height: 750px; /* Aumente a altura */
+    flex-shrink: 0;
+    position: relative;
+    transition: transform 0.4s ease-in-out;
+}
+
+/*.thumbnail .item:hover {
+    transform: scale(1.1);
+}*/
+
+.thumbnail .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/*.thumbnail .item .conteudo {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+}*/
+
+/*.thumbnail .item .conteudo .titulo {
+    font-weight: bold;
+}*/
+

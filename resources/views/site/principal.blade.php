@@ -13,7 +13,8 @@
             <a href="{{route ('principal')}}">Sobre</a>
             <a href="{{route ('screen')}}">Telas</a>
             <a href="{{route ('vagas')}}">candidato</a>
-            <a href="">Info</a>
+            <a href="{{route ('SignIn')}}">Login</a>
+            <a href="{{route ('candidato')}}">Empresa</a>
         </nav>
     </header>
 
@@ -26,7 +27,7 @@
                 <div class="conteudo">
                     <div class="titulo">Propósito do App</div>
                     <div class="descricao">
-                        Nós criamos esse app pensando em.....
+                        Nós criamos esse app pensando em facilitar a vida de quem procura emprego e de quem está contratando. Usando uma interface simples e intuitiva.
                     </div>
                 </div>
             </div>
@@ -35,7 +36,7 @@
                 <div class="conteudo">
                     <div class="titulo">Funcionalidades</div>
                     <div class="descricao">
-                        Você pode fazer isso, isso e isso...
+                        No nosso app, você pode criar um perfil, visualizar vagas disponíveis e se candidatar a elas. Além disso, você pode acompanhar o status da sua candidatura e receber notificações sobre novas oportunidades.
                     </div>
                 </div>
             </div>
@@ -44,7 +45,7 @@
                 <div class="conteudo">
                     <div class="titulo">Redes sociais</div>
                     <div class="descricao">
-                        Siga-nos no instagram, facebook e twitter
+                        Conecte-se conosco: @coneccta_oficial no Instagram, LinkedIn e Twitter
                     </div>
                 </div>
             </div>
@@ -53,7 +54,7 @@
                 <div class="conteudo">
                     <div class="titulo">Missão da empresa</div>
                     <div class="descricao">
-                        Nossa missão é fazer isso e aquilo...
+                        Nossa missão é ser referência em conexões humanizadas, onde o foco é o bem-estar e a felicidade de todos os envolvidos.
                     </div>
                 </div>
             </div>
@@ -89,6 +90,7 @@
         <div id="logo-container">
             <img src="images/logo.png" id="app-logo">
         </div>
+        
         <div class="tempo"></div>
     </div>
     <script src="{{asset('/js/app.js')}}"></script>

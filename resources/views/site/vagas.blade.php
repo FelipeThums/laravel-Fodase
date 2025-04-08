@@ -13,7 +13,8 @@
             <a href="{{route ('principal')}}">Sobre</a>
             <a href="{{route ('screen')}}">Telas</a>
             <a href="{{route ('vagas')}}">candidato</a>
-            <a href="">Info</a>
+            <a href="{{route ('SignIn')}}">Login</a>
+            <a href="{{route ('candidato')}}">Empresa</a>
         </nav>
     </header>
 
